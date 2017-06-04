@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head profile='http://dublincore.org/documents/dcq-html/'>
+  <link rel='icon' href='img/icons/favicon.ico' type='image/x-icon' />
+  <link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' />
+  <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' />
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta charset='UTF-8' />
+  <meta name='AUTHOR' content='Oliver Merkel' />
+  <meta name='COPYRIGHT' content='Oliver Merkel' />
+  <meta name='DC.creator' content='Oliver Merkel' />
+  <meta name='DC.contributor' content='Oliver Merkel' />
+  <meta name='DC.rights' content="
+See file named LICENSE being part of the repository.
+
+Copyright (c) 2017
+@author Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de.
+All rights reserved.
+
+Logos, brands, and trademarks belong to their respective owners.
+
+All source code also including code parts written in HMTL, Javascript, CSS is under MIT License.
+
+The MIT License (MIT)
+
+Copyright (c) 2017 Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &quot;Software&quot;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPREss OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNEss
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+If not otherwise stated all graphics (independent of its format) are licensed under
+    http://creativecommons.org/licenses/by-nc-sa/4.0
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+" />
+  <title>Uisge</title>
+  <meta name='apple-mobile-web-app-capable' content='yes' />
+  <meta name='apple-mobile-web-app-status-bar-style' content='black' />
+  <link rel='apple-touch-icon' href='img/icons/uisge128.png' />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    name='viewport' />
+  <link rel='stylesheet' type='text/css' href='thirdparty/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css' />
+  <link rel='stylesheet' type='text/css' href='css/index.css' />
+  <script src='thirdparty/jquery-2.2.4.js' type='text/javascript'></script>
+  <script src='thirdparty/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js' type='text/javascript'></script>
+  <script src='thirdparty/raphael-2.2.0/raphael.js' type='text/javascript'></script>
+  <script src='js/common.js' type='text/javascript'></script>
+  <script src='js/hmi.js' type='text/javascript' defer></script>
+  <style>
+    @font-face { font-family: gaelic; src: url('thirdparty/font/BouwsUnc.ttf'); }
+  </style>
+  </head>
+  <body>
+<div data-role='page' data-theme='b' id='game-page' class='mybackground'>
+  <div data-role='header' data-position='fixed'>
+    <center id='myheader'>Uisge</center>
+  </div><!-- /header -->
+  <div role='main' class='mycontent ui-content'>
+    <noscript>
+      <p>This HTML5 application depends on enabled Javascript capabilities in your browser.</p>
+      <p>Please consider enabling Javascript if disabled through settings.</p>
+    </noscript>
+    <center>
+      <p style='color: #fff; background: #000; margin: 5px; padding: 10px; border: solid 2px #fff;'>
+        <img src='img/uisge-title.png' width='50%' /><br />
+        <font style='font-family: gaelic;'><font size='+4'>U</font>isge is a game claiming to
+      have Irish</font>, <font style='font-family: gaelic;'>Celtic or Gaelic influences</font>.
+      </p>
+    </center>
+    <p><font style='font-family: gaelic;'><font size='+4'>E</font>ach player has Six pieces of own color</font>.
+    <font style='font-family: gaelic;'>These are facing a King</font> (<font style='font-family: gaelic;'>showing a crown</font>)
+    <font style='font-family: gaelic;'>on one side and a Pawn</font> (<font style='font-family: gaelic;'>without any symbol facing</font>)
+    <font style='font-family: gaelic;'>on the other</font>.
+  </p>
+    <p><font style='font-family: gaelic;'><font size='+4'>G</font>ame is played on a seven
+    times six square board</font>. 
+    <font style='font-family: gaelic;'>This variant of the game board has squares 
+        marked where to place the player</font>'
+    <font style='font-family: gaelic;'>s pawns initially for game set up</font>.
+  </p>
+
+<img src='img/uisge-start.jpg' width='50%' /><br />Initial set up.<br />
+
+<img src='img/uisge-flip_on_jump.jpg' width='50%' /><br />Flip when jumping.<br />
+
+    <p><font style='font-family: gaelic;'><font size='+4'>G</font>ame play alternates between
+    the two players</font>. 
+      <font style='font-family: gaelic;'>Player</font>'<font style='font-family: gaelic;'>s turn
+    consists in moving a piece of her or his color</font>.
+    <font style='font-family: gaelic;'>Own pieces can jump in a straight 
+      direction orthogonally </font>(<font style='font-family: gaelic;'>horizontally or 
+      vertically but not diagonally</font>) <font style='font-family: gaelic;'>over any 
+      </font>(<font style='font-family: gaelic;'>opponent or own</font>)<font style='font-family: gaelic;'> single
+    neighbouring piece on the adjacent free square by flipping the jumping 
+      piece from King to Pawn or vice versa</font>. 
+    </p>
+  <p><font style='font-family: gaelic;'><font size='+4'>A</font>dditionally a King is allowed to move to any 
+      adjacent empty square in horizontal</font>,
+    <font style='font-family: gaelic;'>vertical</font>, 
+      <font style='font-family: gaelic;'>or even diagonal direction</font>.
+    <font style='font-family: gaelic;'>In this case if it is moving</font>
+    (<font style='font-family: gaelic;'>instead of jumping</font>)<font style='font-family: gaelic;'> it
+    is not flipping but still being a King afterwards</font>.
+  </p>
+
+<img src='img/uisge-king_might_move_too.jpg' width='50%' /><br />Kings can additionally move 
+orthogonally and diagonally as well.<br />
+
+<img src='img/uisge-pieces_must_connect.jpg' width='50%' /><br />Jumping the King would disconnect the 
+group forming a second group of two 
+single pieces here. But the diagonal move 
+is allowed.<br />
+
+    <p><b><font style='font-family: gaelic;'><font size='+4'>B</font>eware</font>!</b>
+      <font style='font-family: gaelic;'>During the whole game play all twelve 
+        pieces must stay connected horizontally or 
+        vertically forming a single group</font>.
+    <font style='font-family: gaelic;'>Thus an illegal 
+        jump or move is made if pieces are not connected 
+        by horizontal or vertical adjacent own or 
+        opponent</font>'<font style='font-family: gaelic;'>s pieces</font>.
+    <font style='font-family: gaelic;'>In this case pieces located 
+        diagonal to each other would not be connected</font>.
+  </p>
+
+    <p><font style='font-family: gaelic;'><font size='+4'>F</font>inally the game is won by the player having all six own Kings facing up</font>.</p>
+
+    <p><font style='font-family: gaelic;'><font size='+4'>Y</font>ou can play different
+	  alternative rule sets if a situation comes up so 
+      that a player does not have any valid moves left</font>.
+      <font style='font-family: gaelic;'>Alternatives proposed are</font>: 
+	</p> 
+    <ol>
+      <li><font style='font-family: gaelic;'>Player who can not move looses game</font>.</li> 
+      <li><font style='font-family: gaelic;'>Player who can not move wins</font>.
+	    <font style='font-family: gaelic;'>This idea is basically like in Oware</font>/<font style='font-family: gaelic;'>Awale</font>
+		(<font style='font-family: gaelic;'>a Manquala game</font>).
+		<font style='font-family: gaelic;'>Thus you have to take care your opponent 
+          is not running out of possible moves</font>.</li> 
+      <li><font style='font-family: gaelic;'>Game is a draw</font>.</li> 
+      <li><font style='font-family: gaelic;'>Game continues and player without moves
+	    left simply skips his turn</font>.</li>
+	</ol> 
+    <p><font style='font-family: gaelic;'><font size='+4'>U</font>isge claims to be a game with Irish</font>,
+	  <font style='font-family: gaelic;'>Celtic or Gaelic influences from </font>12<font style='font-family: gaelic;'>th century</font>.
+	  <font style='font-family: gaelic;'>But there is no real reference or citation available to
+	    proof anything like a historical relation to any Celtic or Irish or Gaelic
+		tradition or even board game</font>.
+	  <font style='font-family: gaelic;'>Most likely it is just branded being Irish</font>,
+	  <font style='font-family: gaelic;'>Celtic or Gaelic by publishers after</font> 1983.
+	  <font style='font-family: gaelic;'>In fact in</font> 1983
+	  <font style='font-family: gaelic;'>the game Uisge has been published first named
+	    <b>Scorpion</b> in a magazine named <b>Spielbox</b> by a publisher W</font>.
+	  <font style='font-family: gaelic;'>Nostheide Verlag GmbH</font>.
+	  <font style='font-family: gaelic;'>There it looked quite non Irish and
+	    non Celtic and non Gaelic</font>.
+	  <font style='font-family: gaelic;'>Well</font>,...
+	  <font style='font-family: gaelic;'>Anyway <b>uisce beatha</b> is literally 
+        meaning <b>water of life</b></font>.
+	  <font style='font-family: gaelic;'>See</font> <a href='http://en.wikipedia.org/wiki/Whisky'>http://en.wikipedia.org/wiki/Whisky</a> 
+    </p> 
+
+    <p><font style='font-family: gaelic;'><font size='+4'>G</font>raphics</font>,
+	  <font style='font-family: gaelic;'>photographs taken and fonts used for creating
+	    this variant of the game are either own work or come from sources describing them as 
+        freely available</font>,
+	  <font style='font-family: gaelic;'>freeware</font>,
+	  <font style='font-family: gaelic;'>free for commercial and personal use in terms of 
+        fair use or have similar free licensing</font>. 
+    </p>
+
+    <p><font style='font-family: gaelic;'><font size='+4'>S</font>pecial thanks to</font></p>
+    <ul>
+      <li><font style='font-family: gaelic;'>Jerry Landers</font> (http://www.mouserfonts.com)
+      <font style='font-family: gaelic;'>for the <b>Bouwsma Uncial</b> font</font>,</li>
+      <li><font style='font-family: gaelic;'>Beekeeper Labs</font> (http://beekeeperlabs.com/knotwize.html)
+      <font style='font-family: gaelic;'>for KnotWize used for creating the game board</font></li> 
+    </ul>
+    <p><font style='font-family: gaelic;'><font size='+4'>T</font>o my best knowledge the game
+	 is out</font>-<font style='font-family: gaelic;'>of</font>-<font style='font-family: gaelic;'>production at the moment</font>
+     (<font style='font-family: gaelic;'>September</font>, 2011).
+	 <font style='font-family: gaelic;'>The game has been honored being the <b>Spiel des Jahres</b>
+	 </font>(<font style='font-family: gaelic;'>Game of the year</font>)
+	 <font style='font-family: gaelic;'>Beautiful Game winner in </font>1984.
+	 <font style='font-family: gaelic;'>For more information on 
+       publishers and related information visit</font> <a href='http://boardgamegeek.com/boardgame/11421/uisge'>http://boardgamegeek.com/boardgame/11421/uisge</a>
+   </p>
+  </div><!-- /content -->
+</div><!-- /page -->
+  </body>
+</html>
