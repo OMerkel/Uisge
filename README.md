@@ -8,15 +8,19 @@ board game claiming to have Irish, Celtic or Gaelic origins from 12th century.
 
 __Keywords, Categories__ _2-player board game, deterministic game with perfect information_ 
 
+# Rules
+
+* <a href='omerkel.github.io/Uisge/html5/src/uisge_rules-de.html'>The rules of Uisge in German language</a>
+
 # 3rd Party Libraries
 
 * jQuery: MIT licensed, https://github.com/jquery/jquery
 * jQuery Mobile: MIT licensed, https://github.com/jquery/jquery-mobile
 * Raphaël: MIT licensed, https://github.com/DmitryBaranovskiy/raphael
 
-#Links
+# Links
 
-#Contributors / Authors
+# Contributors / Authors
 
 <table>
   <tr>
