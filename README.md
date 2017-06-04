@@ -10,7 +10,7 @@ __Keywords, Categories__ _2-player board game, deterministic game with perfect i
 
 # Rules
 
-* <a href='omerkel.github.io/Uisge/html5/src/uisge_rules-de.html'>The rules of Uisge in German language</a>
+* <a href='https://omerkel.github.io/Uisge/html5/src/uisge_rules-de.html'>The rules of Uisge in German language</a>
 
 # 3rd Party Libraries
 
