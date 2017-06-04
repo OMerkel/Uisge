@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head profile='http://dublincore.org/documents/dcq-html/'>
+  <link rel='icon' href='img/icons/favicon.ico' type='image/x-icon' />
+  <link rel='schema.DC' href='http://purl.org/dc/elements/1.1/' />
+  <link rel='schema.DCTERMS' href='http://purl.org/dc/terms/' />
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta charset='UTF-8' />
+  <meta name='AUTHOR' content='Oliver Merkel' />
+  <meta name='COPYRIGHT' content='Oliver Merkel' />
+  <meta name='DC.creator' content='Oliver Merkel' />
+  <meta name='DC.contributor' content='Oliver Merkel' />
+  <meta name='DC.rights' content="
+See file named LICENSE being part of the repository.
+
+Copyright (c) 2017
+@author Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de.
+All rights reserved.
+
+Logos, brands, and trademarks belong to their respective owners.
+
+All source code also including code parts written in HMTL, Javascript, Css is under MIT License.
+
+The MIT License (MIT)
+
+Copyright (c) 2017 Oliver Merkel, Merkel(dot)Oliver(at)web(dot)de
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &quot;Software&quot;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPREss OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNEss
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+If not otherwise stated all graphics (independent of its format) are licensed under
+    http://creativecommons.org/licenses/by-nc-sa/4.0
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+" />
+  <title>Uisge</title>
+  <meta name='apple-mobile-web-app-capable' content='yes' />
+  <meta name='apple-mobile-web-app-status-bar-style' content='black' />
+  <link rel='apple-touch-icon' href='img/icons/uisge128.png' />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    name='viewport' />
+  <link rel='stylesheet' type='text/css' href='thirdparty/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css' />
+  <link rel='stylesheet' type='text/css' href='css/index.css' />
+  <script src='thirdparty/jquery-2.2.4.js' type='text/javascript'></script>
+  <script src='thirdparty/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js' type='text/javascript'></script>
+  <script src='thirdparty/raphael-2.2.0/raphael.js' type='text/javascript'></script>
+  <script src='js/common.js' type='text/javascript'></script>
+  <script src='js/hmi.js' type='text/javascript' defer></script>
+  <style>
+    @font-face { font-family: gaelic; src: url('thirdparty/font/BouwsUnc.ttf'); }
+  </style>
+  </head>
+  <body>
+<div data-role='page' data-theme='b' id='game-page' class='mybackground'>
+  <div data-role='header' data-position='fixed'>
+    <center id='myheader'>Uisge</center>
+  </div><!-- /header -->
+  <div role='main' class='mycontent ui-content'>
+    <noscript>
+      <p>This HTML5 application depends on enabled Javascript capabilities in your browser.</p>
+      <p>Please consider enabling Javascript if disabled through settings.</p>
+    </noscript>
+    <center>
+      <p style='color: #fff; background: #000; margin: 5px; padding: 10px; border: solid 2px #fff; font-family: gaelic;'>
+        <img src='img/uisge-title.png' width='50%' /><br />
+        <font size='+4'>U</font>isge ist ein Spiel mit vermutlich urspruenglich irischen, keltischen oder
+        gaelischen Einfluessen.
+      </p>
+    </center>
+    <p><font style='font-family: gaelic;'><font size='+4'>J</font>eder der zwei Spieler kontrolliert
+      sechs Spielsteine eigener Farbe</font>.
+      <font style='font-family: gaelic;'>Jeweils eine Seite der Spielsteine
+      wird als Koenig bezeichnet und zeigt eine abgebildete Krone</font>.
+      <font style='font-family: gaelic;'>
+      Die andere Seite ohne jegliches Symbol des Spielsteins stellt
+      einen Bauern dar</font>.</p>
+    <p><font style='font-family: gaelic;'><font size='+4'>G</font>espielt wird auf einem Spielbrett
+      mit sieben auf sechs Feldern</font>.
+      <font style='font-family: gaelic;'>Die hier beschriebene Variante des
+      Uisge-Spiels zeigt ein Spielbrett auf dem die Startpositionen der
+      Spielsteine beider Spieler markiert sind</font>.
+      <font style='font-family: gaelic;'>Auf diese Startpositionen
+      werden die Spielsteine bei Spielbeginn als Bauern positioniert</font>.</p>
+
+<img src='img/uisge-start.jpg' width='70%' /><br />Startaufstellung<br />
+
+
+<img src='img/uisge-flip_on_jump.jpg' width='70%' /><br />Umdrehen der Spielsteine beim Sprung<br />
+
+
+    <p><font style='font-family: gaelic;'><font size='+4'>D</font>as Zugrecht wechselt jeweils pro Zug
+      zwischen den Spielern</font>.
+      <font style='font-family: gaelic;'>Ein Zug eines Spielers besteht darin</font>,
+      <font style='font-family: gaelic;'>einen Spielstein seiner Farbe zu bewegen</font>.
+      <font style='font-family: gaelic;'>Dabei kann ein eigener Spielstein
+      gradlinig orthogonal</font>,
+      <font style='font-family: gaelic;'>also horizontal oder vertikal</font>,
+      <font style='font-family: gaelic;'>aber nicht diagonal</font>,
+      <font style='font-family: gaelic;'>ueber irgendeinen benachbarten eigenen oder fremden
+      einzelnen Spielstein auf ein direkt angrenzendes freies Feld springen</font>.
+      <font style='font-family: gaelic;'>Der springende Spielstein wird dann
+      jeweils entweder von Koenig nach Bauer oder von Bauer nach Koenig
+      umgedreht </font>(
+      <font style='font-family: gaelic;'>je nachdem</font>,
+      <font style='font-family: gaelic;'>welche Seite vor dem Sprung oben lag</font>).</p>
+    <p><font style='font-family: gaelic;'><font size='+4'>Z</font>usaetzlich ist es einem Koenig
+      erlaubt</font>,
+      <font style='font-family: gaelic;'>auf ein direkt seiner Position angrenzendes
+      freies Feld in horizontaler</font>,
+      <font style='font-family: gaelic;'>vertikaler oder diagonaler Richtung zu ziehen</font>.
+      <font style='font-family: gaelic;'>In diesem Fall</font>,
+      <font style='font-family: gaelic;'>dass der Koenig ein Feld weit zieht und nicht springt</font>,
+      <font style='font-family: gaelic;'>wird dieser nicht umgedreht und bleibt also
+      weiterhin ein Koenig</font>.</p>
+
+
+<img src='img/uisge-king_might_move_too.jpg' width='70%' /><br />Koenige koennen zusaetzlich orthogonal oder diagonal auf ein angrenzendes Feld ziehen.<br />
+
+
+<img src='img/uisge-flip_on_jump.jpg' width='70%' /><br />Hier waere der Sprung des Koenigs nicht zulaessig, da dieser so die gesamte Steingruppe trennen würde und
+damit eine zweite Steingruppen mit zwei Spielsteinen enstaende. Der diagonale Zug ist aber erlaubt.<br />
+
+
+    <p><b><font style='font-family: gaelic;'><font size='+4'>A</font>ufgepasst</font>!</b>
+      <font style='font-family: gaelic;'>Waehrend des gesamten Spielverlaufs muessen alle
+      zwoelf Spielsteine immer miteinander jeweils horizontal und vertikal verbunden
+      bleiben und exakt eine zusammenhaengende Gruppe bilden</font>.
+      <font style='font-family: gaelic;'>Damit sind Zuege oder Spruenge unzulaessig</font>,
+      <font style='font-family: gaelic;'>falls die Spielsteine nicht horizontal oder vertikal
+      mit benachbarten eigenen oder fremden Spielsteinen verbunden bleiben</font>.
+      <font style='font-family: gaelic;'>In einem solchen Fall waeren Spielsteine oder
+      Steingruppen dann diagonal zueinander positioniert und damit nicht verbunden</font>.</p>
+    <p><font style='font-family: gaelic;'><font size='+4'>D</font>as Spiel gewinnt der Spieler</font>,
+      <font style='font-family: gaelic;'>dessen sechs Spielsteine gleichzeitig nur
+      Koenige zeigen</font>.</p> 
+    <p><font style='font-family: gaelic;'><font size='+4'>E</font>s kann zu Spielsituationen kommen</font>,
+      <font style='font-family: gaelic;'>in denen ein Spieler keine Zugmoeglichkeiten mehr hat</font>.
+      <font style='font-family: gaelic;'>Solche Situationen koennen nach einer der folgenden Optionen
+      geregelt werden</font>:</p>
+    <ol>
+      <li><font style='font-family: gaelic;'>Der Spieler ohne Zugmoeglichkeit verliert das Spiel</font></li>
+      <li><font style='font-family: gaelic;'>Oder der Spieler ohne Zugmoeglichkeit gewinnt das Spiel</font>.
+        <font style='font-family: gaelic;'>Aehnlich wie die Idee im
+        Oware</font>/<font style='font-family: gaelic;'>Awale
+        </font> (<font style='font-family: gaelic;'>einem Manquala Spiel</font>)
+        <font style='font-family: gaelic;'>ist es dann nicht erlaubt</font>,
+        <font style='font-family: gaelic;'>den Gegner ohne Zugmoeglichkeit zu lassen</font>.</li>
+      <li><font style='font-family: gaelic;'>Das Spiel endet unentschieden</font>.</li>
+      <li><font style='font-family: gaelic;'>Das Spiel laeuft einfach weiter und der Spieler
+        ohne Zugmoeglichkeit setzt seinen Zug aus</font>.</li>
+    </ol>
+    <p><font style='font-family: gaelic;'><font size='+4'>U</font>isge soll ein Spiel mit irischen</font>,
+      <font style='font-family: gaelic;'>keltischen oder gaelischen Einfluessen aus
+       dem zwoelften Jahrhundert sein</font>.
+      <font style='font-family: gaelic;'>Einen vertrauenswuerdigen Beleg oder eine Quelle oder Referenz
+        als Nachweis hierzu ist jedoch unbekannt</font>.
+      <font style='font-family: gaelic;'>Wahrscheinlich ist dies eher aus marketingtechnischen
+        Gruenden durch den Verleger nach</font> 1983
+      <font style='font-family: gaelic;'>behauptet worden</font>.
+      <font style='font-family: gaelic;'>Tatsaechlich ist</font> 1983
+      <font style='font-family: gaelic;'>das Spiel unter dem Namen Scorpion
+        im Magazin Spielbox im W</font>.
+      <font style='font-family: gaelic;'>Nostheide Verlag GmbH erschienen</font>.
+      <font style='font-family: gaelic;'>Als Spieldesigner ist Roland Siegers angegeben</font>.
+      <font style='font-family: gaelic;'>Diese urspruengliche Version ist eindeutig nicht irisch</font>,
+      <font style='font-family: gaelic;'>keltisch oder gaelisch gefaerbt</font>.
+      <font style='font-family: gaelic;'>Nun ja</font>,...
+      <font style='font-family: gaelic;'>Nichts desto trotz bedeutet das gaelische <b>uisce beatha</b> eigentlich <b>Wasser des Lebens</b></font>,
+      <font style='font-family: gaelic;'>siehe</font> <a href='http://en.wikipedia.org/wiki/Whisky'>http://en.wikipedia.org/wiki/Whisky</a> 
+    </p>
+
+<p>Grafiken, Fotographien und Zeichensätze, die genutzt wurden, um diese Uisge-Variante umzusetzen,
+sind entweder eigenes Werk oder stammen aus Quellen, die diese als frei verfuegbar, Freeware, frei
+fuer kommerzielle und persoenliche Nutzung im Sinne eines Fair Use oder aehnlich freien
+Lizenzbedingungen angeben.</p>
+
+<p>Besonderen Dank gilt</p>
+<ul>
+<li>Jerry Landers (http://www.mouserfonts.com) fuer den "Bouwsma Uncial"-Zeichensatz,</li>
+<li>Beekeeper Labs (http://beekeeperlabs.com/knotwize.html) fuer KnotWize, dass zur Erstellung des Spielbrettes genutzt wurde.</li>
+</ul>
+<p>Nach bestem Wissen und Gewissen wird das Spiel seit laengerem und momentan nicht
+mehr offiziell verlegt.</p>
+<p>Uisge wurde 1984 mit einem Sonderpreis ausgezeichnet als "Spiel des Jahres" in der Kategorie "Schoenes Spiel".
+Mehr Informationen zu Editionen, Verlegern und zugehoerige Informationen findet man unter http://boardgamegeek.com/boardgame/11421/uisge 
+    </p>
+  </div><!-- /content -->
+</div><!-- /page -->
+  </body>
+</html>
