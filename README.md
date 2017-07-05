@@ -49,7 +49,7 @@ __Keywords, Categories__ _2-player board game, deterministic game with perfect i
 
 # Links
 
-* <a href='https://boardgamegeek.com/boardgame/11421/uisge'>Uisge auf BoardGameGeek</a>
+* <a href='https://boardgamegeek.com/boardgame/11421/uisge'>Uisge on BoardGameGeek</a>
 
 # Contributors / Authors
 
