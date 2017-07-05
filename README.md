@@ -10,8 +10,8 @@ __Keywords, Categories__ _2-player board game, deterministic game with perfect i
 
 # Rules
 
-* <a href='https://omerkel.github.io/Uisge/html5/src/uisge_rules-en.html'>The rules of Uisge in English language</a>
-* <a href='https://omerkel.github.io/Uisge/html5/src/uisge_rules-de.html'>The rules of Uisge in German language</a>
+* <a href='https://omerkel.github.io/Uisge/html5/src/uisge_rules-en.html'>The rules of the board game Uisge in English language</a>
+* <a href='https://omerkel.github.io/Uisge/html5/src/uisge_rules-de.html'>Die Spielregeln vom Brettspiel Uisge in deutscher Sprache.</a> (The rules of the board game Uisge in German language)
 
 # 3rd Party Libraries
 
