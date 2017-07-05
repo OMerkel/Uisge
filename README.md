@@ -13,6 +13,34 @@ __Keywords, Categories__ _2-player board game, deterministic game with perfect i
 * <a href='https://omerkel.github.io/Uisge/html5/src/uisge_rules-en.html'>The rules of the board game Uisge in English language</a>
 * <a href='https://omerkel.github.io/Uisge/html5/src/uisge_rules-de.html'>Die Spielregeln vom Brettspiel Uisge in deutscher Sprache</a> (The rules of the board game Uisge in German language)
 
+# Print and Play
+
+<table>
+  <tr>
+    <td>
+      <img src='res/uisge_components.jpg' width='80%' />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Uisge game components showing a free print-and-play game board
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img src='res/pnp-uisge_board.jpg' width='80%' />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Just the free print-and-play Uisge game board
+    </td>
+  </tr>
+</table>
+
 # 3rd Party Libraries
 
 * jQuery: MIT licensed, https://github.com/jquery/jquery
@@ -20,6 +48,8 @@ __Keywords, Categories__ _2-player board game, deterministic game with perfect i
 * Raphaël: MIT licensed, https://github.com/DmitryBaranovskiy/raphael
 
 # Links
+
+* <a href='https://boardgamegeek.com/boardgame/11421/uisge'>Uisge auf BoardGameGeek</a>
 
 # Contributors / Authors
 
