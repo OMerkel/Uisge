@@ -118,7 +118,7 @@ export const createRenderer = (container, onCellClick) => {
     x: VB_W / 2,
     y: 76,
     'text-anchor': 'middle',
-    style: 'font:700 58px/1 system-ui,sans-serif;fill:#f8fafc;stroke:#1f2937;stroke-width:6;',
+    style: 'font:700 72px/1 system-ui,sans-serif;fill:#f8fafc;stroke:#1f2937;stroke-width:2;',
   });
   svg.appendChild(statusText);
 
@@ -230,11 +230,11 @@ export const createRenderer = (container, onCellClick) => {
           
           if (isSelected) {
             cell.disc.setAttribute('stroke', colors.selected);
-            cell.disc.setAttribute('stroke-width', '14');
+            cell.disc.setAttribute('stroke-width', '18');
             cell.disc.style.filter = 'drop-shadow(0 0 18px rgba(34,197,94,0.95))';
           } else if (isSelectable) {
             cell.disc.setAttribute('stroke', colors.selectable);
-            cell.disc.setAttribute('stroke-width', '10');
+            cell.disc.setAttribute('stroke-width', '14');
             cell.disc.style.filter = 'none';
           } else if (isLatest) {
             cell.disc.setAttribute('stroke', colors.latest);
