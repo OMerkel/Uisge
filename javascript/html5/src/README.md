@@ -35,6 +35,7 @@ This implementation is fully browser-based, uses modern ES modules, and has no r
 - Full test suite:
   - Unit tests (Vitest) for board logic and UCT engine.
   - End-to-end tests (Playwright) for gameplay and UI flows.
+- PWA - Progressive Web App support for local cached App install
 
 ---
 

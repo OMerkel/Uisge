@@ -23,12 +23,46 @@ Rules
 --------------------
 
 - [The rules of the board game Uisge in English language](https://omerkel.github.io/Uisge/html5/src/uisge_rules-en.html)
-- [Die Spielregeln vom Brettspiel Uisge in deutscher Sprache](https://omerkel.github.io/Uisge/html5/src/uisge_rules-de.html) (The rules of the board game Uisge in German language)
+- [Die Spielregeln vom Brettspiel Uisge in deutscher Sprache](https://omerkel.github.io/Uisge/html5/src/uisge_rules-de.html)
+  (The rules of the board game Uisge in German language)
 
 Play Online
 --------------------
 
 - [Play in your browser](https://omerkel.github.io/Uisge/javascript/html5/src/)
+
+PWA - Progressive Web App
+-----------------------------
+
+A Progressive Web App (PWA) is a web app that can be installed to your device
+and run like a native app in fullscrenn without any browser decorations.
+For Uisge, this means you can launch the game from your app list/start menu,
+get a standalone window,
+and keep playing even when network quality is poor (depending on cached assets).
+
+Install Uisge as a PWA
+--------------------
+
+1. Open [Play in your browser](https://omerkel.github.io/Uisge/javascript/html5/src/)
+   in a Chromium-based browser (Edge/Chrome).
+1. Click the install button in the address bar, or use the browser menu:
+   Edge: `Apps -> Install this site as an app`
+   Chrome: `Cast, save, and share -> Install page as app`
+1. Confirm the install prompt.
+1. Start Uisge from your app launcher/start menu.
+
+Install from a local build (localhost)
+--------------------
+
+PWA installation also works from `localhost` (HTTPS is not required for localhost).
+
+1. Serve the repository with a local static server.
+1. Example from repository root: `python -m http.server 8080`
+1. Open `http://localhost:8080/javascript/html5/src/` in Edge/Chrome.
+1. Use the same browser install steps listed above.
+
+If install is not offered, check that the page is loaded from `https://...` or `localhost`,
+then refresh once and try again.
 
 Print-and-Play
 --------------------
