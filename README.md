@@ -25,6 +25,11 @@ Rules
 - [The rules of the board game Uisge in English language](https://omerkel.github.io/Uisge/html5/src/uisge_rules-en.html)
 - [Die Spielregeln vom Brettspiel Uisge in deutscher Sprache](https://omerkel.github.io/Uisge/html5/src/uisge_rules-de.html) (The rules of the board game Uisge in German language)
 
+Play Online
+--------------------
+
+- [Play in your browser](https://omerkel.github.io/Uisge/javascript/html5/src/)
+
 Print-and-Play
 --------------------
 
