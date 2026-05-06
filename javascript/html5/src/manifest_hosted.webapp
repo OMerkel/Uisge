@@ -1,0 +1,23 @@
+{
+  "version": "0.7",
+  "name": "Uisge",
+  "description": "Uisge board game with UCT AI",
+  "launch_path": "/four_in_a_row_js/html5/src/index.html",
+  "orientation": "landscape-primary",
+  "icons": {
+    "16": "/four_in_a_row_js/html5/src/img/icons/uisge16.png",
+    "32": "/four_in_a_row_js/html5/src/img/icons/uisge32.png",
+    "48": "/four_in_a_row_js/html5/src/img/icons/uisge48.png",
+    "60": "/four_in_a_row_js/html5/src/img/icons/uisge60.png",
+    "64": "/four_in_a_row_js/html5/src/img/icons/uisge64.png",
+    "90": "/four_in_a_row_js/html5/src/img/icons/uisge90.png",
+    "120": "/four_in_a_row_js/html5/src/img/icons/uisge120.png",
+    "128": "/four_in_a_row_js/html5/src/img/icons/uisge128.png",
+    "256": "/four_in_a_row_js/html5/src/img/icons/uisge256.png"
+  },
+  "developer": {
+    "name": "Oliver Merkel",
+    "url": "https://github.com/OMerkel/four_in_a_row_js"
+  },
+  "installs_allowed_from": ["*"]
+}

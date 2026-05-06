@@ -4,6 +4,54 @@
   transform: rotate(180deg);
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  color: #111;
+}
+
+[data-role='page'] {
+  min-height: 100vh;
+}
+
+[data-role='header'] {
+  background: #1d1d1d;
+  color: #ffffff;
+  border-bottom: 1px solid #0d0d0d;
+  padding: 0.65rem 1rem;
+  text-shadow: none;
+}
+
+[data-role='header'][data-position='fixed'] {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#myheader {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.ui-content,
+.mycontent {
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .ui-btn-icon-notext:after {
     background-color: rgba(0, 0, 0, 0);
 }
