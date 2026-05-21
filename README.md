@@ -38,7 +38,13 @@ A Progressive Web App (PWA) is a web app that can be installed to your device
 and run like a native app in fullscrenn without any browser decorations.
 For Uisge, this means you can launch the game from your app list/start menu,
 get a standalone window,
-and keep playing even when network quality is poor (depending on cached assets).
+and keep playing even when network quality is poor.
+
+Uisge now includes a Service Worker (`javascript/html5/src/sw.js`) that:
+
+- Precaches the app shell (HTML, CSS, JS modules, manifests, and key images/icons).
+- Uses runtime caching for same-origin requests.
+- Provides offline fallback for navigation requests.
 
 Install Uisge as a PWA
 --------------------
@@ -49,7 +55,11 @@ Install Uisge as a PWA
    Edge: `Apps -> Install this site as an app`
    Chrome: `Cast, save, and share -> Install page as app`
 1. Confirm the install prompt.
+1. Keep the app open once online so initial caching can complete.
 1. Start Uisge from your app launcher/start menu.
+
+When updating from an older installed version, close and reopen the installed app once online.
+If assets still look stale, uninstall and reinstall the app so the new Service Worker controls all pages.
 
 Install from a local build (localhost)
 --------------------
@@ -63,6 +73,9 @@ PWA installation also works from `localhost` (HTTPS is not required for localhos
 
 If install is not offered, check that the page is loaded from `https://...` or `localhost`,
 then refresh once and try again.
+
+Offline check (quick): install, open once online, switch device/browser to offline mode,
+then relaunch the installed app and verify board, icons, and UI assets still render.
 
 Print-and-Play
 --------------------

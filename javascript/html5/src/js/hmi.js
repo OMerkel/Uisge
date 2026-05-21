@@ -454,8 +454,24 @@ const wireUI = () => {
 export { saveSettingsToStorage, restoreSettingsFromStorage };
 
 // ---------------------------------------------------------------------------
+// PWA service worker registration
+// ---------------------------------------------------------------------------
+
+const registerServiceWorker = async () => {
+  if (!('serviceWorker' in navigator)) return;
+
+  try {
+    await navigator.serviceWorker.register('./sw.js');
+  } catch (error) {
+    console.warn('Service worker registration failed:', error);
+  }
+};
+
+// ---------------------------------------------------------------------------
 // Bootstrap
 // ---------------------------------------------------------------------------
+
+registerServiceWorker();
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', wireUI);

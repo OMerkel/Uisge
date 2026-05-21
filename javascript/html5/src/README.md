@@ -35,7 +35,7 @@ This implementation is fully browser-based, uses modern ES modules, and has no r
 - Full test suite:
   - Unit tests (Vitest) for board logic and UCT engine.
   - End-to-end tests (Playwright) for gameplay and UI flows.
-- PWA - Progressive Web App support for local cached App install
+- PWA support with Service Worker app-shell caching and offline navigation fallback.
 
 ---
 
@@ -59,6 +59,7 @@ src/
 ├── package.json
 ├── vitest.config.js
 ├── playwright.config.js
+├── sw.js
 ├── css/
 │   └── index.css
 ├── doc/
@@ -112,6 +113,16 @@ node tests/server.js
 Then open `http://localhost:4173`.
 
 Playwright also starts its own test server automatically for E2E runs.
+
+### PWA and offline behavior
+
+- `js/hmi.js` registers the Service Worker (`sw.js`) at startup.
+- `sw.js` precaches the app shell (core HTML/CSS/JS, manifests, icons, and key images).
+- Same-origin runtime requests are cached after first successful network response.
+- Navigation requests use network-first with offline fallback to the cached app shell.
+
+For installed mobile usage, run the app once while online after install so initial caching can complete.
+After updates, close and reopen once online; if required, uninstall/reinstall to refresh an older install.
 
 ---
 
@@ -224,6 +235,14 @@ If needed, call npm explicitly:
 ```powershell
 & 'C:\Program Files\nodejs\npm.cmd' test
 ```
+
+### PWA installed app does not show cached assets offline
+
+1. Open the app URL in the browser while online.
+2. Wait for initial load to finish (this allows Service Worker cache priming).
+3. Close and reopen the installed app.
+4. If assets are still missing offline, uninstall/reinstall the app.
+5. In browser DevTools (Application tab), verify Service Worker is active and cache storage contains Uisge caches.
 
 ---
 
