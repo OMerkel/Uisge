@@ -43,7 +43,7 @@
       <details>
         <summary>Goal</summary>
         <div>
-          <p>Win by turning all six of your own pieces into Kings (crown side up).</p>
+          <p>Win by either turning all six of your own pieces into Kings (crown side up) or by leaving your opponent with no legal moves.</p>
         </div>
       </details>
 
@@ -65,8 +65,6 @@
           <p>If a move would split the group, it is illegal and not offered as a selectable action.</p>
         </div>
       </details>
-
-      <p>In this implementation, if the next player has no legal move, that player loses.</p>
 
       <button class="btn btn-back" type="button">&#8592; Back</button>
     </section>
@@ -157,9 +155,9 @@
   <p class="panel-title">Uisge</p>
   <ul class="panel-nav">
     <li><button id="btn-panel-close" type="button">&#10005; Close</button></li>
-    <li class="panel-divider" role="separator"></li>
+    <li class="panel-divider" role="separator" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></li>
     <li><button id="nav-new" type="button">&#9654; New Game</button></li>
-    <li class="panel-divider" role="separator"></li>
+    <li class="panel-divider" role="separator" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></li>
     <li><button id="nav-rules" type="button">Rules&hellip;</button></li>
     <li><button id="nav-options" type="button">Options&hellip;</button></li>
     <li><button id="nav-about" type="button">About&hellip;</button></li>
